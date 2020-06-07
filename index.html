@@ -1,50 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <script type="text/javascript">
-        // Single Page Apps for GitHub Pages
-        // https://github.com/rafrex/spa-github-pages
-        // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
-        (function (l) {
-            if (l.search) {
-                var q = {};
-                l.search.slice(1).split('&').forEach(function (v) {
-                    var a = v.split('=');
-                    q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
-                });
-                if (q.p !== undefined) {
-                    window.history.replaceState(null,
-                        null,
-                        l.pathname.slice(0, -1) +
-                        (q.p || '') +
-                        (q.q ? ('?' + q.q) : '') +
-                        l.hash
-                    );
-                }
-            }
-        }(window.location));
-    </script>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <base href="/" />
-    <title>TeamOps</title>
-    <link href="libraries/bootstrap/4.5.0/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
-    <link href="teamops-eb402d6e.css" rel="stylesheet" integrity="sha256-uCGNiz6OheS3I4RhjxMNQFVvawMYRmiRgwgD/8/k5Bw= sha384-3j+3XXMiNz5udkWqzgs2oQcPRd5/FjrEf35XW+WlsZCvE7XGwGhOaloqrzhajcJZ" crossorigin="anonymous">
-</head>
-<body>
-    <app>
-        <header></header>
-        <main class="container">
-            <div class="loader"></div>
-        </main>
-    </app>
 
-    <div id="blazor-error-ui">
-        An unhandled error has occurred.
-        <a href="" class="reload">Reload</a>
-        <a class="dismiss">🗙</a>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <base href="/">
+    <title>TeamOps</title>
+    <script>!function(i){if(i.search){var a={};i.search.slice(1).split("&").forEach((function(i){var l=i.split("=");a[l[0]]=l.slice(1).join("=").replace(/~and~/g,"&")})),void 0!==a.p&&window.history.replaceState(null,null,i.pathname.slice(0,-1)+(a.p||"")+(a.q?"?"+a.q:"")+i.hash)}}(window.location)</script>
+    <style>.loader,.loader:after,.loader:before{border-radius:50%;width:2.5em;height:2.5em;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation:load7 1.8s infinite ease-in-out;animation:load7 1.8s infinite ease-in-out}.loader{color:#fff;font-size:10px;margin:0 auto;margin-top:calc(var(--big-vertical-gutter-height) - 2em);position:relative;text-indent:-9999em;-webkit-transform:translateZ(0);-ms-transform:translateZ(0);transform:translateZ(0);-webkit-animation-delay:-.16s;animation-delay:-.16s}.loader:after,.loader:before{content:'';position:absolute;top:0}.loader:before{left:-3.5em;-webkit-animation-delay:-.32s;animation-delay:-.32s}.loader:after{left:3.5em}@-webkit-keyframes load7{0%,100%,80%{box-shadow:0 2.5em 0 -1.3em}40%{box-shadow:0 2.5em 0 0}}@keyframes load7{0%,100%,80%{box-shadow:0 2.5em 0 -1.3em}40%{box-shadow:0 2.5em 0 0}}</style>
+    <style>#blazor-error-ui{background:#ffffe0;bottom:0;box-shadow:0 -1px 2px rgba(0,0,0,.2);display:none;left:0;padding:.6rem 1.25rem .7rem 1.25rem;position:fixed;width:100%;z-index:1000}#blazor-error-ui .dismiss{cursor:pointer;position:absolute;right:.75rem;top:.5rem}</style>
+    <link href="libraries/bootstrap/4.5.0/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="teamops-40dc564a.css" integrity="sha256-eWraQiTZIMSB0oUONZ4i70cK9nF0w3KvgMJD1b9+TzA= sha384-3qD8GcULo3LsgO5eyEuwQ9CMLvc3tulyd5JWTCuDA/BIaNO24JzQ/SreFlBqiv3E" crossorigin="anonymous" rel="stylesheet">
+  </head>
+
+  <body>
+    <app>
+      <header></header>
+      <main class="container">
+        <div class="loader"></div>
+      </main>
+    </app>
+    <div id="blazor-error-ui"> An unhandled error has occurred. <a href="" class="reload">Reload</a>
+      <a class="dismiss">🗙</a>
     </div>
     <script src="teamops-d9685b67.js" integrity="sha256-nKTwI2FQHyMXe7Mj1u/LurnFAVCwBeinxoZsPTxgf/M= sha384-joBZ901bE/mA0SngukiRG09cYO2NXisJCw2KORZwvqTia3sbot+JcnJce6LdTJ5/" crossorigin="anonymous"></script>
     <script src="_framework/blazor.webassembly.js"></script>
-</body>
+  </body>
+
 </html>
