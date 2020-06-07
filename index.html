@@ -24,7 +24,10 @@
       <a class="dismiss">🗙</a>
     </div>
     <script src="teamops-d9685b67e2f77e529b97.js" integrity="sha384-joBZ901bE/mA0SngukiRG09cYO2NXisJCw2KORZwvqTia3sbot+JcnJce6LdTJ5/" crossorigin="anonymous"></script>
-    <script src="_framework/blazor.webassembly.js"></script>
+    <!--<script src="_framework/blazor.webassembly.js"></script>-->
+    <script src="libraries/brotli/decode.min.js"></script>
+    <script src="_framework/blazor.webassembly.js" autostart="false"></script>
+    <script>Blazor.start({loadBootResource:function(t,o,a,e){if("dotnetjs"!==t&&"localhost"!==location.hostname)return async function(){const o=await fetch(a+".br",{cache:"no-cache"});if(!o.ok)throw new Error(o.statusText);const e=await o.arrayBuffer(),n=new Int8Array(e),r=BrotliDecode(n);return new Response(r,{headers:{"content-type":"dotnetwasm"===t?"application/wasm":"application/octet-stream"}})}()}})</script>
   </body>
 
 </html>
